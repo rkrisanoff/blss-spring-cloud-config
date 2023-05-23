@@ -1,0 +1,45 @@
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: JCcccHost
+  mqtt:
+    username: guest
+    password: guest
+    url: tcp://127.0.0.1:1883
+    client:
+      id: mqttId
+    default:
+      topic: topic,topic1
+    completionTimeout: 3000
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        default_schema: lab1
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/blss
+    username: drukhary
+    password: 142857
+    driverClassName: org.postgresql.Driver
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest
+#    QUEUE_FOR_EMAIL: queueForEmail
+#    EXCHANGE_NAME: exchangeOne
+#    ROUTING_KEY: recipeStatusUpdate
+#    HOST: localhost
+
+server:
+  port: 6969
+app:
+  mqtt-broker-url: tcp://127.0.0.1:1883

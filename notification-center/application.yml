@@ -1,0 +1,17 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 465
+    username: ksumatova178@gmail.com
+    password: hayxdlobulrrcyop
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+    protocol: smtps
+  quartz:
+    job-store-type: memory
+server:
+  port: 8082
