@@ -15,6 +15,12 @@ spring:
     job-store-type: memory
   application:
     name: notification-center
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: JCcccHost
   cloud:
     consul:
       discovery:
