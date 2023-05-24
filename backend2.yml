@@ -1,0 +1,35 @@
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: JCcccHost
+  mqtt:
+    username: guest
+    password: guest
+    url: tcp://127.0.0.1:1883
+    client:
+      id: mqttId
+    default:
+      topic: topic,topic1
+    completionTimeout: 3000
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        default_schema: lab1
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/blss
+    username: s312988
+    password: yLlyBZBBCdwXquTT
+    driverClassName: org.postgresql.Driver
+server:
+  port: 6969
+app:
+  mqtt-broker-url: tcp://127.0.0.1:1883
