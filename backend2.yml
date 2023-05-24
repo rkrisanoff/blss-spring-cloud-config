@@ -19,13 +19,14 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
-        default_schema: lab1
+        default_schema: s312988
         jdbc:
           lob:
             non_contextual_creation: true
   datasource:
     platform: postgres
     url: jdbc:postgresql://localhost:5432/studs
+
     username: s312988
     password: yLlyBZBBCdwXquTT
     driverClassName: org.postgresql.Driver
