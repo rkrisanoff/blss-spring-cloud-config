@@ -1,0 +1,29 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 465
+    username: ksumatova178@gmail.com
+    password: hayxdlobulrrcyop
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+    protocol: smtps
+  quartz:
+    job-store-type: memory
+  application:
+    name: notification-center
+  cloud:
+    consul:
+      discovery:
+        instanceId: ${spring.application.name}
+        register: true
+        register-health-check: false
+        service-name: ${spring.application.name}
+      host: localhost
+      port: 8500
+server:
+  port: 8082
+
